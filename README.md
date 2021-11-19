@@ -1,4 +1,4 @@
-# kneighbour
+# Use state of art libraries for Approximate nearest neighbor search
 The following strategies can be used to determine exact k nearest:
 
 1.Exhaustive search entails matching each position to any point, which takes time (the size of the dataset).
