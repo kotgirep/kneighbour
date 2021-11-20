@@ -26,7 +26,12 @@ Accuracy performance trademark is denoted by following:
 number of trees — the number many binary trees we construct; a higher value yields quite reliable data but bigger indexes.
 search k — the number of binary trees we explore for every point; a higher value yields better reliable data but takes more time to return.
 
-### Product Quantization
+### LSH
 
 When it comes to ANN, LSH-based algorithms are one of the most frequent methodologies. They create a hash table as their data structure by grouping neighboring points into the same bucket.
 Facebook's Faiss is one of the most well-known implementations. Because there are numerous LSH explanations available, I will only discuss the intuition behind it, how it should be utilized, and the benefits and drawbacks.
+
+### Product Quantization
+
+We were able to enhance query performance by creating an index, but we neglected to account for extra constraints.
+We, like many other engineers, anticipated that linear storage would be a "no-brainer". However, in practice, linear storage can quickly become prohibitively expensive, and the fact that some algorithms require loading them into RAM and that many systems lack storage/computing separation exacerbates the problem.
