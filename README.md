@@ -16,3 +16,12 @@ Data structure-based methods such as Trees, LSH, and Quantization, a technique f
 
 Extensive Search: None Component — a function that is applied to vectors to prevent an exhaustive search.
 Twisted Files and Neighbor Charts are two of these approaches.
+
+### Vector Encoding using Trees
+
+1. When it comes to ANN, tree-based algorithms are among the most frequent methodologies. By dividing the dataset into subgroups, they create forests (a group of trees) as their dataset.
+2. Annoy, which utilizes trees (more precisely forests) to allow Spotify's music suggestions, is one of the most well-known options available. Because there is a fintuition behind this one, how to utilize it, and the benefits and drawbacks.
+
+Accuracy performance trademark is denoted by following:
+number of trees — the number many binary trees we construct; a higher value yields quite reliable data but bigger indexes.
+search k — the number of binary trees we explore for every point; a higher value yields better reliable data but takes more time to return.
